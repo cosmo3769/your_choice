@@ -70,10 +70,23 @@ body{
     font-size: medium;
 }
 
-/* #myVideo {
-    position: fixed;
+/* #myvideo {
+    position:fixed;
+    z-index: -1;
     width: 100%;
     height: auto;
+} */
+/* @media (min-aspect-ratio: 16/9) {
+    #myvideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myvideo { 
+        width:auto;
+        height: 100%;
+    }
 } */
 
 .introduction {
