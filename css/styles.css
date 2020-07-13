@@ -47,7 +47,6 @@ body{
 
 .card {
     border: none;
-    opacity: 0.6;
 }
 
 .card-body {
@@ -71,11 +70,11 @@ body{
     font-size: medium;
 }
 
-#myVideo {
+/* #myVideo {
     position: fixed;
     width: 100%;
     height: auto;
-}
+} */
 
 .introduction {
     color: white;
