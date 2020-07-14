@@ -9,21 +9,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <title>your pick</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Tech A WAY</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            
             <div class="row">
-
                 <div class="col-5 col-sm-6">
-                    <a class="navbar-brand mr-auto" href="./index.html"><img class="navbar-logo" src="img/logo.jpg" height="30" width="41">your pick</a>
+                    <a id="brandname" class="navbar-brand mr-auto" href="./index.html">Tech A WAY</a>
                 </div>
-                
-                <div class="offset-3 col offset-sm-4 col-sm mt-1">
+                <!-- <div class="offset-3 col offset-sm-4 col-sm mt-2">
                   <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Portfolio
                     <span class="caret"></span>
@@ -32,18 +30,16 @@
                       <li><a href="https://piyush-cosmo.github.io/cosmo/#/"><img class="cosmo" src="img/piyush.jpg" height="50" width="50"></a></li>
                     </ul>
                   </div>         
-                </div>
-
+                </div> -->
             </div>
-           
         </div>
     </nav>
     
     <div class="container">
         <div class="row">
             
-            <div class="offset-xs-1 col-xs-11 col-sm-12 mt-4">
-                <img src="img/Arduino_Logo.png" alt="arduino logo" class="img img-blog img-responsive">
+            <div id="blog-intro" class="offset-xs-1 col-xs-11 col-sm-12">
+                <img src="img/Arduino_Logo.png" alt="arduino logo" class="img img-blog img-responsive" id="robot">
                 <h1 class="introduction">Introduction to Arduino</h1>
                 
             </div>
@@ -55,23 +51,33 @@
             </div>
             <div class="col-sm-9 content">
                 <p>
-                    Have you ever broken your electronic toys or any electronic item, to know how it works or what components are inside the device? Have you ever thought of making your own gadgets like some remote control car, line following robot, simple led system or any sensor based gadgets.
+                    Have you ever broken your electronic toys or any electronic item, to know how it works or what components are inside the device? 
+                    Have you ever thought of making your own gadgets like some remote control car, line following robot, simple led system or any sensor 
+                    based gadgets.
 
                 </p>
                 <p>
-                    Today, I am going to introduce you to a microcontroller based board that will make your ideas real.The name of the board is ‘Arduino UNO’. Some of you might be thinking, what the microcontroller is? In the simplest words, a microcontroller is a chip with CPU and some fixed amount of RAM, ROM and other peripherals embedded in it.You might have been thinking how this board gonna help us in making gadgets, So don’t worry I will be clearing all doubts here, just stick with me.
+                    Today, I am going to introduce you to a microcontroller based board that will make your ideas real. The name of the board 
+                    is ‘Arduino UNO’. Some of you might be thinking, what the microcontroller is? In the simplest words, a microcontroller is 
+                    a chip with CPU and some fixed amount of RAM, ROM and other peripherals embedded in it. You might have been thinking how 
+                    this board gonna help us in making gadgets, So don’t worry I will be clearing all doubts here, just stick with me.
 
                 </p>
                 <h6><em>What is Arduino?</em></h6>
                 <p>
-                    <a href="https://www.arduino.cc/en/guide/introduction" class="links"><ins>Arduino</ins></a> is an open source electronics platform which provides easy to use hardware and software which can be used for making various projects, gadgets and also for prototyping etc. Arduino makes different types of boards to serve different specific purposes and the boards can take different inputs and turn it into the output. We can do many stuffs using any of these boards but today we are going to learn about a particular board i.e. “Arduino UNO”.So let's jump into the details of the board and learn how we can use it to make our desired gadget.
+                    <a href="https://www.arduino.cc/en/guide/introduction" class="links"><ins>Arduino</ins></a> is an open source electronics platform 
+                    which provides easy to use hardware and software which can be used for making various projects, gadgets and also for prototyping etc. 
+                    Arduino makes different types of boards to serve different specific purposes and the boards can take different inputs and turn it 
+                    into the output. We can do many stuffs using any of these boards but today we are going to learn about a particular 
+                    board i.e. “Arduino UNO”. So let's jump into the details of the board and learn how we can use it to make our desired gadget.
 
                 </p>
                 <h4><em><u>Arduino UNO</u></em></h4>
-                <p>Uno is basically a microcontroller board which uses ATmega328 as its main microcontroller chip.Below is the diagram of arduino with its parts labeled.Give a look at each part and read the description below for knowing much about it.
+                <p>Uno is basically a microcontroller board which uses ATmega328 as its main microcontroller chip. Below is the diagram of 
+                    arduino with its parts labeled. Give a look at each part and read the description below for knowing much about it.
                 </p>
                 <em>
-                    Note:-i will be using processor word in place of microcontroller so don’t get confused.
+                    Note :- i will be using processor word in place of microcontroller so don’t get confused.
                 </em>
                 <fig>
                     <img src="img/arduino-parts.png" alt="image showing parts of arduino uno" class="content-img img-responsive">
@@ -79,56 +85,64 @@
                 </fig> 
                 <h4><em><ins>Parts Explained</ins></em></h4>
                 <ol>
-                    <li><em>ATmega328p :-</em> It is the main microcontroller of the board which does all the computing for the board and stores the programs or the instructions.We also call it the brain of the board(<i><small>just like the CPU is for computers</small></i>).It is a 8-bit microcontroller.</li>
-                    <li><i><u>ATmega16U2 :-</u></i> It is the small microcontroller which is responsible for communication with the USB.It translates the data which comes via USB cable into something which is understandable by the main processor.</li>
-                    <em>Note:- The main processor communicates using serial communication. Serial communication is the process of communication where data is sent over a channel one bit at a time. So the board needs ATmega16U2 for communicating via USB.</em>
+                    <li><em>ATmega328p :-</em> It is the main microcontroller of the board which does all the computing for the board and stores the 
+                        programs or the instructions. We also call it the brain of the board(<i><small> just like the CPU is for computers </small></i>). It 
+                        is a 8-bit microcontroller.</li>
+                    <li><i>ATmega16U2 :-</i> It is the small microcontroller which is responsible for communication with the USB. It translates the data 
+                        which comes 
+                        via USB cable into something which is understandable by the main processor.</li>
+                        <p>
+                    <em>Note :- The main processor communicates using serial communication. Serial communication is the process of communication where data is 
+                        sent over a channel one bit at a time. So the board needs ATmega16U2 for communicating via USB. </em>
+                        </p>
                    <li><i>Power pins :-</i> Power pins are for either supplying power to       
                         the board or drawing out power from the board to run some 
                         output devices like led, buzzers, shields etc.
-                        Following pins are power pins with their description:-
+                        Following pins are power pins with their description :-
                         <ul>
-                            <li><em>Vin:-</em> It is the pin for powering arduino.It takes voltage 
+                            <li><em>Vin :-</em> It is the pin for powering arduino. It takes voltage 
                                 upto 7 to 12 volts(labeled) but the recommended voltage is
                                 6 to 9 volt.
                             </li>
-                            <li><em>5v:-</em> It is the pin for supplying 5 volt to any electronic 
-                                components connected to the board.It can draw upto 400mA of 
+                            <li><em>5v :-</em> It is the pin for supplying 5 volt to any electronic 
+                                components connected to the board. It can draw upto 400mA of 
                                 current over a USB power supply.
                             </li>
-                            <li><em>3.3v:-</em> It is the pin for supplying 3.3 volt to any 
+                            <li><em>3.3v :-</em> It is the pin for supplying 3.3 volt to any 
                                 electronic component connected to the board.</li>
-                            <li><em>GND:-</em> It is the negative pin which act as negative end for 
+                            <li><em>GND :-</em> It is the negative pin which act as negative end for 
                                 completing the electrical circuit.
                             </li>
-                            <li><em>Reset:-</em> Reset pin is used to reset the arduino via an 
-                                external button(<small>if connected to that pin</small>).
+                            <li><em>Reset :-</em> Reset pin is used to reset the arduino via an 
+                                external button(<small> if connected to that pin </small>).
                             </li>
-                            <li><em>IOREF:-</em> This pin provides the voltage reference with which 
-                                the microcontroller operates.It can be used by some shields 
+                            <li><em>IOREF :-</em> This pin provides the voltage reference with which 
+                                the microcontroller operates. It can be used by some shields 
                                 to select the appropriate power source.
                             </li>
                         </ul>
                     </li>
                     <li><em>USB Plug :-</em> USB plug is just a simple B-type USB port which 
-                        is used to connect the board via computer or laptop.It is 
+                        is used to connect the board via computer or laptop. It is 
                         necessary for programming the board. This pin also powers 
                         the board as USB cables draw power according to the need of 
                         device it connected to for example you can charge your phone 
                         with your laptop using USB cable.
                     </li>
                     <li><em>Power Plug :-</em> It is used to supply power to arduino from an  
-                        A.C source by using an ac to dc adapter.The recommended 
+                        A.C source by using an ac to dc adapter. The recommended 
                         voltage is 7 to 12 volt but board can work on 6 to 20 volt 
                         supply.
-                        <i>Note:- You must not supply more than 12 volt to the board it 
-                            will may overheat the voltage regulator and damage the board.
+                        <i>Note :- You must not supply more than 12 volt to the board it 
+                            will overheat the voltage regulator and damage the board.
                         </i>
                     </li>
-                    <li><em>Digital I/O pins:-</em> There are total 14 digital input output pins on the board(<small>6 of them which are PWM pins</small>). As the name suggest these pins are for taking input and 
+                    <li><em>Digital I/O pins :-</em> There are total 14 digital input output pins on the board(<small>6 of them which are PWM pins</small>). As the 
+                        name suggest these pins are for taking input and 
                         giving output in the form of digital signals i.e. 0 or 1.
                         These pins are numbered from 2 to 13 on the board.
                     </li>
-                         <i> Note:- Pin with ~ as the prefix are pwm pins we will be   
+                         <i> Note :- Pin with ~ as the prefix are pwm pins we will be   
                             discussing pwm in the later part of this tutorial.
                         </i>
                     <li><em>ANALOG IN :-</em> These pins are for taking analog inputs from 
@@ -136,10 +150,10 @@
                         in numbers and labeled as A0 to A5 on the board.
                     </li>
                     <li><em>Serial Out and Serial IN :-</em> Both are responsible for the 
-                        Communication of two arduino boards.‘Serial out’ is labelled 
+                        Communication of two arduino boards. ‘Serial out’ is labelled 
                         as “TX” and it transmits the signal to the different board.
                         ‘Serial In’ is labelled as “RX” and it receives the signal 
-                        from the board.Both of them are also used to connect board 
+                        from the board. Both of them are also used to connect board 
                         with some of the shields.
                     </li>
                     <li>
@@ -151,24 +165,24 @@
                         ICSP pins on the board the pin near the main processor is 
                         for programming the firmware and the bootloader of the 
                         processor similarly the port near the ATmega16U2 is used  
-                        for programming the firmware of this microcontroller.This
+                        for programming the firmware of this microcontroller. This
                         type of programming is known as AVR Programming or direct 
                         programming.
                    
                     </li>
                     <i>
-                        Note:- firmware is the code which is prewritten in the
+                        Note :- firmware is the code which is prewritten in the
                          Flash(ROM)Of the microcontroller. It is a low level code.
                     </i>
                     <li><em>Crystal Oscillator :-</em> Crystal oscillator provides a clock 
-                        Signal to the main processor.It provides a square wave
+                        Signal to the main processor. It provides a square wave
                         signal which determines the time required for each T 
-                        state.It has a clock speed of 16Mhz. Basically it is 
+                        state. It has a clock speed of 16Mhz. Basically it is 
                         responsible for the speed of the board.
                   </li>
                   <li><em>Voltage Regulator :-</em> It regulates the voltage supplied to
                        the board. The arduino operates on 5 volt so its duty is 
-                       to limit the excess voltage to the 5 volt.It gets
+                       to limit the excess voltage to the 5 volt. It gets
                        Overheated if the supply voltage is greater than 12 
                        volts.
                   </li>
@@ -184,81 +198,121 @@
                             than 3.3v then it will send this supply to the ground pin 
                             else it will send it to the voltage regulator and then 
                             Voltage regulator will cut the supply from the USB and 
-                            hence board will be powered via the Vin source.So 6.6 is 
+                            hence board will be powered via the Vin source. So 6.6 is 
                             minimum voltage to cut the USB supply.
                      
                          </i>
                     <li><em>Reset Button :-</em> It resets the arduino and the programs 
-                        written starts to execute from the line one.It doesn't
+                        written starts to execute from the line one. It doesn't
                         delete the uploaded program.
                     </li>
 
                 </ol>
-                <h4><em><u>Specification</u></em></h4>
-                <p>Now you know almost all the components present on the board.So lets move forward to learn about the working of the board but before that we will take a quick look at the few specifications of the board.</p>
+                <h4><em><u>Specifications</u></em></h4>
+                <p>Now you know almost all the components present on the board. So lets move forward to learn about the working of the board 
+                    but before that we will take a quick look at the few specifications of the board.</p>
                 <ul>
-                    <li>Microcontroller: Microchip ATmega328P</li>
-                    <li>Operating Voltage: 5 Volts</li>
-                    <li>Input Voltage: 7 to 20 Volts</li>
-                    <li>Digital I/O Pins: 14 (of which 6 can provide PWM output)</li>
-                    <li>UART: 1</li>
-                    <li>I2C: 1</li>
+                    <li>Microcontroller : Microchip ATmega328P</li>
+                    <li>Operating Voltage : 5 Volts</li>
+                    <li>Input Voltage : 7 to 20 Volts</li>
+                    <li>Digital I/O Pins : 14 (of which 6 can provide PWM output)</li>
+                    <li>UART : 1</li>
+                    <li>I2C : 1</li>
                     <li>SPPI</li>
-                    <li>Analog Input Pins: 6</li>
-                    <li>DC Current per I/O Pin: 20 mA</li>
-                    <li>DC Current for 3.3V Pin: 50 mA</li>
-                    <li>Flash Memory: 32 KB of which 0.5 KB used by bootloader</li>
-                    <li>SRAM: 2 KB</li>
-                    <li>EEPROM: 1 KB</li>
-                    <li>Clock Speed: 16 MHz</li>
-                    <li>Length: 68.6 mm</li>
-                    <li>Width: 53.4 mm</li>
-                    <li>Weight: 25 g</li>
+                    <li>Analog Input Pins : 6</li>
+                    <li>DC Current per I/O Pin : 20 mA</li>
+                    <li>DC Current for 3.3V Pin : 50 mA</li>
+                    <li>Flash Memory : 32 KB of which 0.5 KB used by bootloader</li>
+                    <li>SRAM : 2 KB</li>
+                    <li>EEPROM : 1 KB</li>
+                    <li>Clock Speed : 16 MHz</li>
+                    <li>Length : 68.6 mm</li>
+                    <li>Width : 53.4 mm</li>
+                    <li>Weight : 25 g</li>
                 </ul>
                 <p>
-                    Above are the few specifications of the board.As you know that the main processor of the board is ATmega328P and the board operates on the 5 volts. The board is a digital board which means it sends output digitally i.e. in 0 and 1 (0=0volts and 1=5volts).
+                    Above are the few specifications of the board. As you know that the main processor of the board is ATmega328P and the 
+                    board operates on the 5 volts. The board is a digital board which means it sends output digitally i.e. in 0 and 1 (0=0volts and 1=5volts).
                 </p>
                 <h4><em><u>Working of the board</u></em></h4>
-                <p>Board works according to your instructions. You can tell your board what to do by sending a set of instructions to the microcontroller on the board. To do so you use <a href="https://www.arduino.cc/reference/en/"><u>The Arduino programming language</u></a> and the Arduino software(IDE).</p>
-                <p>This board works on digital signals; it can't send/transmit analog signals.For those who don’t know what digital signal and analog signal is:- <em>Digital signals are electrical signals which can only be in two states i.e. 0 or 1 / on or off / high or low.
+                <p>Board works according to your instructions. You can tell your board what to do by sending a set of instructions to the 
+                    microcontroller on the board. To do so you use <a href="https://www.arduino.cc/reference/en/"><u>The Arduino programming language</u></a> 
+                    and the Arduino software(IDE).</p>
+                <p>This board works on digital signals; it can't send/transmit analog signals. For those who don’t know what digital signal and 
+                    analog signal is :- <em>Digital signals are electrical signals which can only be in two states i.e. 0 or 1 / on or off / high or low.
                     Analog signals are continuous electrical signals which range from 0 to 1024.
-                    </em> But we can use digital signals as analog signals by PWM(<small>pulse width modulation</small>). Pulse width modulation is a method of getting analog results by digital means.In this method we chop the digital signals effectively with respect to time and get the desired output. For example <em>Suppose a motor runs at a full speed on 5v supply and we have a 5v supply which. But we want it to run at half of its speed.We will use PWM for this, motor does not start to run at the full speed as soon as we power it, it takes some time to get it full speed so what we will do we'll give it 5v supply until it get to rotate at half of its speed and then we will shift the supply to 0v and again we will give it 5v after a calculated time interval so that it maintain its speed at half of the max speed and this will result in continuous movement of motor at half of its speed.</em>
+                    </em> But we can use digital signals as analog signals by PWM(<small> pulse width modulation </small>). Pulse width modulation is a 
+                    method of getting analog results by digital means. In this method we chop the digital signals effectively with respect to time and 
+                    get the desired output. For example :- <em>Suppose a motor runs at a full speed on 5v supply and we have a 5v supply which. 
+                    But we want it to run at half of its speed. We will use PWM for this, motor does not start to run at the full speed as soon as we 
+                    power it, it takes some time to get it full speed so what we will do we'll give it 5v supply until it get to rotate at half of its 
+                    speed and then we will shift the supply to 0v and again we will give it 5v after a calculated time interval so that it maintain its 
+                    speed at half of the max speed and this will result in continuous movement of motor at half of its speed.</em>
                     This is an important concept so keep this in mind we will know how to use it when we enter the programming part of the board.
                     So let us learn how we can program the board.
-
                 </p>
-                <h4><em><u>Pogramming of the Board</u></em></h4>
-                <p>By programming the board we can send our instructions to the board.So in this section we will learn about ‘Arduino IDE’ and take the overview of the ‘Arduino programming language’.</p>
+                <h4><em><u>Programming of the Board</u></em></h4>
+                <p>By programming the board we can send our instructions to the board. So in this section we will learn about ‘Arduino IDE’ and 
+                    take the overview of the ‘Arduino programming language’.</p>
                 <h6><em><u>ARDUINO IDE</u></em></h6>
-                <p><a href="https://en.wikipedia.org/wiki/Arduino_IDE"><u>Arduino IDE</u></a> is a cross platform application (for windows, macOS, linux) that is written in function from C and C++.Basically it's an application for programming arduino compatible boards.
+                <p><a href="https://en.wikipedia.org/wiki/Arduino_IDE"><u>Arduino IDE</u></a> is a cross platform application (for windows, macOS, linux) 
+                    that is written in function from C and C++. Basically it's an application for programming arduino compatible boards.
                 </p>
                 <p>
-                    We can program the arduino using some different softwares also but the arduino IDE is best and easy to use and it is also distributed by the arduino itself.So i will recommend you to use the desktop IDE but you can also program the arduino using
+                    We can program the arduino using some different softwares also but the arduino IDE is best and easy to use and it is also distributed by 
+                    the arduino itself. So i will recommend you to use the desktop IDE but you can also program the arduino using
                     <a href="https://login.arduino.cc/login?state=g6Fo2SBkZTUwVWV5TV8tQ1p4Mm1rZ0pEU1lzSXN0Q0xEN0hRVqN0aWTZIGdKVUFkRy1sbF85dXlMNGxxNU1OaTR6bGFxM2VaSmQwo2NpZNkgcnI2TFNPU3o1N2g3ZnZzSGRSWFhQa1pHM0VSb1hUZlo&client=rr6LSOSz57h7fvsHdRXXPkZG3ERoXTfZ&protocol=oauth2&authorizeTimeoutInSeconds=5&redirect_uri=https%3A%2F%2Fcreate.arduino.cc%2Feditor&logout_uri=https%3A%2F%2Fcreate.arduino.cc&audience=https%3A%2F%2Fapi.arduino.cc&scope=openid%20profile%20email&skipAutoLogin=true&response_type=code&response_mode=query&nonce=SkFyb0NMQVV6MktYVE91dEx2Qks5bDBZV0otRVFPQXBCdlBkNXZsWVNPTQ%3D%3D&code_challenge=yWgjSjWY798Ll1CgcxTqHpzpjNU4JOYEO2l_o9zajas&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuOC4xIn0%3D#/login"></a>. For downloading the arduino IDE for your system to work <a href="https://www.arduino.cc/en/main/software"><u>click here</u></a>. https://www.arduino.cc/en/main/software
                 </p>
                 <p>
-                    After extracting the file go to the folder where you extracted it and double click on the arduino.exe file to open it. After opening the IDE you will see this screen on your desktop or laptop.
+                    After extracting the file go to the folder where you extracted it and double click on the arduino.exe file to open it. After opening 
+                    the IDE you will see this screen on your desktop or laptop.
                 </p>
                 <fig>
                     <img src="img/ide-mainscreen.jpg" class="img content-img img-responsive">
                     <figcaption>Main screen of the arduino IDE</figcaption>
                 </fig>
                 <p>In the above picture just below the menu bar there is round shaped icon with a tick mark on it i.e. the icon for compile
-                    By clicking on that icon you can compile your code(<i>Compiling means converting your source code into machine code cause the machine only understands binary language</i>). Just beside the compile icon arrow marked icon is present this icon is for uploading the code to the board. After successfully compiling your code you should upload your code to the board using the ‘USB cable’ one end connected to your laptop and the other end to your board.This was about IDE but what should we write in our code we will take some overview in the upcoming section.
+                    By clicking on that icon you can compile your code(<i>Compiling means converting your source code into machine code cause the machine 
+                        only understands binary language</i>). Just beside the compile icon arrow marked icon is present this icon is for uploading 
+                        the code to the board. After successfully compiling your code you should upload your code to the board using the ‘USB cable’ 
+                        one end connected to your laptop and the other end to your board. This was about IDE but what should we write in our 
+                        code we will take some overview in the upcoming section.
                 </p>
                 <h4><em><u>Code part of programming the board </u></em></h4>
-                <p>In the previous section we learned how to use IDE to upload the code to the board. In this section we will get an overview of what we should write in the code and how we can learn coding it.
-                    According to me coding is a never ending learning process there is always a chance to write something new it has endless possibilities.So no one can teach you how to code you have to learn it by doing yourself. Coding is just a language in which you can communicate with machines and a good communication requires two things: a common language and thoughts which you want to share. So get your thoughts on what you want to do with your board, learn the basics of coding search on google how u can achieve it and don’t stop until it's done.Google is the most important tool while learning so use it for your every query after giving a thought on how you can solve it.
+                <p>In the previous section we learned how to use IDE to upload the code to the board. In this section we will get an overview of 
+                    what we should write in the code and how we can learn coding it.
+                    According to me coding is a never ending learning process there is always a chance to write something new it has endless 
+                    possibilities.So no one can teach you how to code you have to learn it by doing yourself. Coding is just a language in which 
+                    you can communicate with machines and a good communication requires two things: a common language and thoughts which you want to 
+                    share. So get your thoughts on what you want to do with your board, learn the basics of coding search on google how u can achieve 
+                    it and don’t stop until it's done. Google is the most important tool while learning so use it for your every query after 
+                    giving a thought on how you can solve it.
                 </p>
                 <p>
-                    Let’s come to the overview,before getting into the coding part , I wanna tell you that arduino uses a programming language which similar to <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><u>C programming language</u></a> If you don’t know C programming language then don’t try to learn it completely at once and then start programming arduino, just learn some basics and syntax of the following:- variable, functions, loops, arrays. After reading them go to the arduino<a href="https://www.arduino.cc/reference/en/"><u>reference page</u></a> and learn about the arduino functions,variable and library.But i will suggest you to learn it by starting with the small projects such as blinking led etc. by searching tutorials on the internet and try to understand each line of code. Build more and more and ultimately you will learn how to code on your own.I will explain something to you that will make your further learning easy.
+                    Let’s come to the overview, before getting into the coding part, I wanna tell you that arduino uses a programming language 
+                    which similar to <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><u>C programming language</u></a>. If you 
+                    don’t know C programming language then don’t try to learn it completely at once and then start programming arduino, just learn 
+                    some basics and syntax of the following :- variable, functions, loops, arrays. After reading them go to the 
+                    arduino<a href="https://www.arduino.cc/reference/en/"><u> reference page </u></a> and learn about the arduino functions, variable and 
+                    library. But i will suggest you to learn it by starting with the small projects such as blinking led etc. by searching tutorials on 
+                    the internet and try to understand each line of code. Build more and more and ultimately you will learn how to code on your own. I 
+                    will explain something to you that will make your further learning easy.
 
                 </p>
                 <p>On the first page of the IDE you must had seen something written like this, if you haven’t then take another look 
                      <img src="img/ide-code.jpg" alt="pre written code on arduino" class="img content-img img-responsive"> 
-                     Some of you who know nothing about programming will not be getting anything, let me explain it to you.These are nothing but just two functions void setup() and void loop().Now you will be thinking what a function is:- <i>function is a block of code which performs a particular task.</i> void is the return type and setup is the name of the function; the pair of parentheses() is like a sign that it is a function and the opening and closing curly braces mark the starting and ending of the function respectively.And in between those curly braces we write our block of code. Void is the return type and setup is the name of the function; the pair of parentheses() is like a sign that it is a function and the opening and closing curly braces mark the starting and ending of the function respectively.And in between those curly braces we write our block of code.
+                     Some of you who know nothing about programming will not be getting anything, let me explain it to you. These are nothing but 
+                     just two functions void setup() and void loop(). Now you will be thinking what a function is :- <i>function is a block of 
+                    code which performs a particular task.</i> void is the return type and setup is the name of the function; the pair of parentheses() 
+                    is like a sign that it is a function and the opening and closing curly braces mark the starting and ending of the function 
+                    respectively.And in between those curly braces we write our block of code. Void is the return type and setup is the name of the 
+                    function; the pair of parentheses() is like a sign that it is a function and the opening and closing curly braces mark the 
+                    starting and ending of the function respectively and in between those curly braces we write our block of code.
                 </p>
-                <p>So all the arduino programs have at least two functions i.e. void setup() and void loop(). In the setup() function we set up our pins that which pin will be used for the sending output and which one is for taking inputs.It runs only for one time as the program starts running. You can set your pin mode using pinMode() function. For example for setting up the pin 13 for the output you will write:-</p>
+                <p>So all the arduino programs have at least two functions i.e. void setup() and void loop(). In the setup() function we set up 
+                    our pins that which pin will be used for the sending output and which one is for taking inputs. It runs only for one time as 
+                    the program starts running. You can set your pin mode using pinMode() function. For example for setting up the pin 13 for the 
+                    output you will write:-</p>
                 <div class="code"> 
                    <p>
                      void setup(){<br>
@@ -267,9 +321,11 @@
                         
                     </p>
                 </div>
-                <p>pinMode is also a function but it is a prewritten(inBuilt) function, it takes a pin and its mode as its argument.Here pin is 13 and its mode is OUTPUT.</p>
-                  <i>Note:- We must use semicolon after each line otherwise the program will not compile and throw an error(semicolon represents the end of the line).</i>
-                <p>void loop() is a function where we write the things we want to do.It runs infinitely till the board is powered.for example :-
+                <p>pinMode is also a function but it is a prewritten(inBuilt) function, it takes a pin and its mode as its argument. Here pin is 13 and 
+                    its mode is OUTPUT.</p>
+                  <i>Note :- We must use semicolon after each line otherwise the program will not compile and throw an error(semicolon represents the 
+                      end of the line).</i>
+                <p>void loop() is a function where we write the things we want to do. It runs infinitely till the board is powered. For example :-
                     For blinking of led using pin 13.
                 </p>
                 <div class="code">
@@ -283,8 +339,18 @@
                         
                     </p>
                 </div>
-                <p>Above program will repeat itself after it ends so the led will blink till the board is powered.Let us understand this piece of code, In the loop() function we have used two other functions for achieving our desired outcome, first one is digitalWrite() and second is delay().digitalWrite() is also a inBuilt function which used for writing the high or low to the pins which are set for output using pinMode function(we have setup the pinmode for 13 in the first example),writing HIGH to pin means providing 5v supply and writing low to the pin means providing 0 volt supply.Practically it means that in the case of HIGH the light will glow and in the case of LOW the light will be off.So you can see digitalWrite also takes two arguments the first is ‘pin’ and second is ‘output state’ i.e HIGH or LOW.There is one more function in the above program i.e. delay() function.It’s work is to freeze the board for few seconds.Here freezing means to stop the board from executing the next command for the inputted time interval.It takes only one argument which is the no. of milliseconds(1sec=1000ms).In the above code we have provided the value of the 1000 that means the led will remain glowing for 1sec and after that it will get turn off and then it will remain turn off for 1sec and this whole process will repeat till the board is powered.
-                    So you got the code for your starter project let me merge them for you:-
+                <p>Above program will repeat itself after it ends so the led will blink till the board is powered.Let us understand this piece of code, 
+                    In the loop() function we have used two other functions for achieving our desired outcome, first one is digitalWrite() and 
+                    second is delay(). digitalWrite() is also a inBuilt function which used for writing the high or low to the pins which are set for 
+                    output using pinMode function(we have setup the pinmode for 13 in the first example), writing HIGH to pin means providing 5v supply 
+                    and writing low to the pin means providing 0 volt supply. Practically it means that in the case of HIGH the light will glow and in the 
+                    case of LOW the light will be off. So you can see digitalWrite also takes two arguments the first is ‘pin’ and second is ‘output state’ 
+                    i.e HIGH or LOW. There is one more function in the above program i.e. delay() function. It’s work is to freeze the board for few 
+                    seconds. Here freezing means to stop the board from executing the next command for the inputted time interval. It takes only one 
+                    argument which is the no. of milliseconds(1sec=1000ms). In the above code we have provided the value of the 1000 that means the 
+                    led will remain glowing for 1sec and after that it will get turn off and then it will remain turn off for 1sec and this whole 
+                    process will repeat till the board is powered.
+                    So you got the code for your starter project let me merge them for you :-
                 </p>
                 <div class="code">
                    <p>
@@ -301,14 +367,22 @@
                     </p>
                 </div>
                 <p>
-                    Use this code and get you started in the hardware world.Before moving towards the ending note let’s summarize how can you make your first project:-
+                    Use this code and get you started in the hardware world. Before moving towards the ending note let’s summarize how can you make your 
+                    first project :-
                 </p>
                 <p>
-                    For making your first you need a Arduino UNO board, led, jumper wires, resistor, and an IDE. After all this you need to write your program or the above program in the IDE and compile after successful compilation of the code you must connect your board to your laptop/desktop via USB and then click on the upload icon after the successful upload. Now connect the led to gnd and pin 13 to complete the circuit using the jumper wires.After completing  the circuit power the board using USB cable or the external power supply via power plug or using the Vin pin(recommended using via usb). And you did it HURRAY!. Enjoy watching the led blinking. You can also try to blink the led in different fashion for example by increasing the time interval of blinking etc.
+                    For making your first you need a Arduino UNO board, led, jumper wires, resistor, and an IDE. After all this you need to write 
+                    your program or the above program in the IDE and compile after successful compilation of the code you must connect your board 
+                    to your laptop/desktop via USB and then click on the upload icon after the successful upload. Now connect the led to gnd and 
+                    pin 13 to complete the circuit using the jumper wires.After completing  the circuit power the board using USB cable or the 
+                    external power supply via power plug or using the Vin pin(recommended using via usb). And you did it HURRAY!. Enjoy watching 
+                    the led blinking. You can also try to blink the led in different fashion for example by increasing the time interval of blinking etc.
 
                 </p>
                 <p>
-                    Learning about how to use hardwares to make gadgets sounds cool and it will also provide an edge in your career. It will make you self-sufficient and the coming era is “Era of Robots” and in that, it will be a great skill to achieve.So get yourself started as soon as possible and make interesting gadgets that will make our life easier.
+                    Learning about how to use hardwares to make gadgets sounds cool and it will also provide an edge in your career. It will 
+                    make you self-sufficient and the coming era is “Era of Robots” and in that, it will be a great skill to achieve. So get yourself 
+                    started as soon as possible and make interesting gadgets that will make our life easier.
                 </p>
                 <b>Thank you.</b>
                 <i>Learning never ends so keep learning :)</i>
@@ -317,11 +391,36 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+
+    <div class="author">
+    
+      <h4 class="hr-text">/</h4>
+       <div class="container">
+          <div class="row">
+              <div class="col-sm-2">
+
+              </div>
+
+                <div class="col-sm-10">
+                    <h6>Ayush</h6>
+                    <p class="self-description">An autodidact who loves to learn and share the complex knowledge in easiest way possible.</p>
+                </div>
+              
+            </div>
+       </div>
+      <h4 class="hr-text">/</h4>
+          
+        
+    </div>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="files/jquery.slim.min.js"></script>
     <script src="files/popper.min.js"></script>
     <script src="files/bootstrap.min.js"></script>
+
+    
 </body>
 
 </html>

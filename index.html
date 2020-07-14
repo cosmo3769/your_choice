@@ -9,7 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="files/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <title>your pick</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+    <title>Tech A WAY</title>
 </head>
 
 <body>
@@ -18,9 +22,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 col-sm-6">
-                    <a class="navbar-brand mr-auto" href="./index.html"><img class="navbar-logo" src="img/logo.jpg" height="30" width="41">your pick</a>
+                    <a id="brandname" class="navbar-brand mr-auto" href="#">Tech A WAY</a>
                 </div>
-                <div class="offset-3 col offset-sm-4 col-sm mt-1">
+                <!-- <div class="offset-3 col offset-sm-4 col-sm mt-2">
                   <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Portfolio
                     <span class="caret"></span>
@@ -29,29 +33,50 @@
                       <li><a href="https://piyush-cosmo.github.io/cosmo/#/"><img class="cosmo" src="img/piyush.jpg" height="50" width="50"></a></li>
                     </ul>
                   </div>         
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
-
-    <!-- <video autoplay muted loop id="myVideo">
-        <source src="vid/fun.mp4" type="video/mp4">
+    
+        <div id="video" class="embed-responsive embed-responsive-16by9">
+            <video muted autoplay loop width="100%" height="20%">
+                <source src="vid/lfr_dark.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+    
+    <!-- <video id="blogVideo" muted autoplay loop width="100%">
+        <source src="video/arcade.mp4" type="video/mp4">
     </video> -->
-            
-            <div class="container">
-                <div class="row row-first">
-                    <div class="col-12 col-sm-4">
-                        <div class="card mb-5" style="width: auto;"">
-                            <img class="card-img-top" src="img/Arduino_Logo.png" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Arduino Basics</h5>
-                              <p class="card-text">A quick blog to know all about the basics of Arduino.</p>
-                              <a class="link-blog" href="./arduino_basics.html"><img class="blog-icon" src="files/copywriting.svg">Blog</a>
-                            </div>
+
+    <div class="video-content">
+        <span class="idea">
+        <h1 id="brandname">Tech A Way</h1>
+        <p>Take Away your learning and take a way towards the wisdom.</p>
+        <p class="scroll">scroll up to see our content</p>
+        </span>
+    </div>
+    
+    
+    <div class="container">
+        <div class="row row-first justify-xs-content-center">
+            <div class="col-12 col-sm-4 card-deck">
+                <a class="link-card" href="./arduino_basics.html">
+                    <div class="card">
+                        <img class="card-img-top img-card" src="img/Arduino_Logo.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Arduino Basics</h5>
+                          <p class="card-text">A simple and easy blog cum tutorial to get anyone started with Arduino.</p>
+                          <a class="link-blog" href="./arduino_basics.html"><img class="blog-icon" src="files/copywriting.svg">Blog</a>
+                          <!-- <i class="fas fa-share-alt text-muted float-right " data-toggle="tooltip" data-placement="top" title="Share this post"></i>
+                          <i class="fas fa-heart text-muted float-right " data-toggle="tooltip" data-placement="top" title="I like it"></i> -->
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
+        </div>
+    </div>
+    
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="files/jquery.slim.min.js"></script>
